@@ -1,0 +1,41 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Patrick
+subtitle:         'van Broeckhuijsen'
+tagline:          ''
+description:      'Mechatronics engineer by day.<br />Web developer by night.'
+url:              https://patb.ro
+baseurl:          /
+
+author:
+  name:           'Patrick van Broeckhuijsen'
+  url:            https://twitter.com/pvbroeckhuijsen
+
+pagination:
+  enabled:        true
+  per_page:       5
+  permalink:      "/page:num/"
+  sort_field:     'date'
+  sort_reverse:   true
+
+excerpt_separator: <!--more-->
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/patbro
+
+sass:
+  sass_dir: assets/css
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-gist
+  - redcarpet

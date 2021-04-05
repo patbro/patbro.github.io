@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+    <div class="content">
+        <div class="container">
+            <header class="sm-auto">
+                <a href="{{ site.baseurl | relative_url }}"><h3 class="float-sm-start sm-0 name">Patrick van Broeckhuijsen</h3></a>
+                <nav class="nav nav-masthead justify-content-center float-sm-end">
+                    <a class="nav-link{% if page.url == site.baseurl %} active" aria-current="page{% endif %}" href="{{ site.baseurl | relative_url }}">Home</a>
+                    {% assign pages_list = site.pages %}
+                    {% for node in pages_list %}
+                        {% if node.title != null %}
+                            {% if node.layout == "page" or node.title == "Blog" %}
+                                <a class="nav-link{% if page.url == node.url%} active" aria-current="page{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </nav>
+            </header>
+            
+            <main>
+                {{ content }}
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <h5>Patrick van Broeckhuijsen</h5>
+                <p>Mechatronics engineer by day.<br />Web developer by night.</p>
+            </div>
+            <div class="row">  
+                <hr />
+                <p>&copy; Patrick van Broeckhuijsen</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

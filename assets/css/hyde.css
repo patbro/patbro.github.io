@@ -1,0 +1,342 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+html, body {
+  color: rgba(255, 255, 255, 0.9);
+  background-color:#202020; /*rgb(16, 24, 23);*/
+  height: 100%;
+  z-index: -2;
+}
+
+a {
+  color: rgba(93, 187, 255, 0.8);
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+#sidebar {
+  background-color:#98ACB2;
+  max-width: 500px;
+}
+
+.sidebar-content {
+  text-align: left;
+  padding: 2rem 1rem;
+  
+  color: #202020;
+
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3rem;
+}
+
+.sidebar-about h1 span.subtitle {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.sidebar-about p {
+  font-family: "Courier New";
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+  font-family: "Courier New";
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 2rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+@media (min-width: 48em) {
+  .content {
+    margin-left: 21rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+/*
+ * Home page
+ */
+
+#content {
+  padding: 50px 20px;
+  max-width: 1020px;
+}
+
+.page h1, .post h1 {
+  background: #fff;
+  color: #202020;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  display: inline-block;
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
+  margin-bottom: 20px;
+}
+
+.page h2 {
+  background: #fff;
+  color: #202020;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  display: inline-block;
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
+  margin-bottom: 20px;
+}
+
+.row .lead h2, .row .lead h3 {
+  font-size: 1.2rem;
+}
+
+.row .lead h4 {
+  font-size: 1rem;
+}
+
+.row .lead h3, .row .lead h4 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.row .lead img {
+  width: 100%;
+  border-radius: 900px; /* Set border-radius absurtly high to create a circle */
+}
+
+/*
+ * Pagination
+ */
+
+.pagination {
+  margin: 4em 0 1em 0;
+}
+
+.pagination-pages {
+  color: #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+
+/*
+ * Footer
+ */
+
+p.footer {
+  color: #ccc;
+}
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red */
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .sidebar {
+  background-color: #d28445;
+}
+.theme-base-09 .content a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .sidebar {
+  background-color: #90a959;
+}
+.theme-base-0b .content a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
