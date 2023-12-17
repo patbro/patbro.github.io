@@ -3,11 +3,9 @@ layout: page
 title: About
 ---
 
-I'm Patrick, I live in Eindhoven and I dedicate most of my time to working at [Prodrive Technologies](https://prodrive-technologies.com) as a mechatronics engineer. A place where I can thruly thrive as a human-being. Most of my work spans the robotics and [embedded systems](https://prodrive-technologies.com/careers/projects/what-development-for-embedded-systems-is-all-about) department.
+I'm Patrick, I live in Eindhoven and I dedicate most of my time to working at [Prodrive Technologies](https://prodrive-technologies.com) as a mechatronics engineer. A place where I can truly thrive as a human-being. Most of my work spans the HR and software department.
 
-The other hours of the day you can find me building oil separators and pickling bath solutions at [vanbroeckhuijsenvof.nl](https://vanbroeckhuijsenvof.nl).
-
-Together with [Lukas](https://lukasant.nl) I'm building a place to manage your student house at [mystudent.house](https://mystudent.house). Go ahead and dive right into the code base at [GitHub](https://github.com/mystudenthouse).
+The other hours of the day you can find me building oil separators and pickling bath solutions at [vanbroeckhuijsenvof.nl](https://vanbroeckhuijsenvof.nl), or other solutions at [Antrum Technologies](https://antrum-technologies.nl).
 
 Over the weekend, I usually spend my time on a combination of software and electronic projects. These projects range from reverse-engineering the tennis court reservation app, to developing electronics for my home automation. The latter I might write an article about some time. Most of the software I write is open sourced on my [GitHub](https://github.com/patbro).
 

@@ -26,17 +26,3 @@ title: Home
     </div>
 </section>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            {% for post in site.posts limit:3 %}
-                <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                <small class="text-muted">{{ post.date | date_to_string }}</small>
-                <p>{{ post.excerpt }}</p>
-                {% if post.excerpt != post.content %}
-                <a href="{{ post.url | relative_url }}">Read more</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</div>
